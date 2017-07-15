@@ -1,6 +1,6 @@
 # Iteration and Arrays
 
-In this lesson we will use and discover built-in methods to iterate through an array. Using our new skills we will build our own Recipe Generator that will help us create some dishes for a party we are planning.
+In this lesson we will use and discover **built-in methods** to iterate through an array. Using our new skills we will build our own Recipe Generator that will help us create some dishes for a party we are planning.
 
 JavaScript’s **built-in methods** are actions that can be performed on objects, which in this case are arrays. Built-in methods always contain a function which defines the action that is taken on the object.
 
@@ -8,12 +8,14 @@ As of ES5 (now supported by roughly 98% of browsers), JavaScript supplies a numb
 
 	//code for workspace
 	var array = ['item1', 'Item2', 'Item3', 'Item4'];
-			
-	array.forEach(function(item) {  // the .forEach method 
+	
+	// the .forEach method 		
+	array.forEach(function(item) {  
 			console.log(item);
 	});
 	
-	var newArray =  fridgeContents.filter(function(item) {  // the .filter method 
+	// the .filter method
+	var newArray =  fridgeContents.filter(function(item) {   
 		item != Item2 
 	});
 	
