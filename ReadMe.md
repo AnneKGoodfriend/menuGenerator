@@ -603,7 +603,7 @@ But honestly, it still feels like our recipe has a few too many ingredients. Goo
 
 Amazing! We have what is shaping into a real recipe! Now we just need to add some quantities to our ingredients and we can start preparing the food!
 
-Click next to keep building!
+Click Next to keep building!
 
 ---
 
@@ -739,7 +739,7 @@ In the editor you should see the code you have written so far:
 
 We can see that `recipes` contains a list of our ingredients, each with a quantity defined. This looks like one tasty recipe, folks!
 
-Click next to make some new recipes and wrap things up!
+Click Next to make some new recipes and wrap things up!
 
 ---
 
@@ -806,7 +806,7 @@ Your recipe changed pretty dramatically, didn't it?  You could keep doing this p
 
 You made this awesome Recipe Generator all while learning about built-in methods to iterate through an array. 
 
-Click next to continue.
+Click Next to continue.
 
 --- 
 
