@@ -290,7 +290,7 @@ Let's give it a try!
 
 ##### `.filter()` Exercise
 
-In your editor you should see the `allFoods` array that we made in the last exercise.
+In your editor, you should see the `allFoods` array that we made in the last exercise.
 
     // your array should look like this
     allFoods = [  
@@ -821,6 +821,6 @@ Let's take one more look at the built-in methods we just learned:
 + `.filter()` creates a new array with all elements from the current array that pass a test carried out by a callback function.
 + `.findIndex()` returns the index of the first element in our array that satisfies a test we provide.
 + `.splice()` allows use to both remove items from our array.
-+ `.map()` iterates through an array, calls a provided function on every element in that array and returns a new array of the results. 
++ `.map()` iterates through an array and calls a provided function on every element in that array and returns a new array of the results. 
 
-And the most fun thing is there are even more for you to use and learn! But for now let's take a moment to just celebrate.
+And the most fun thing is there are even more for you to use and learn! But for now, let's take a moment to just celebrate.
