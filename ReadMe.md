@@ -818,9 +818,9 @@ Let's take one more look at the built-in methods we just learned:
 
 + `.forEach()` is a method that we can use to iterate through an array in place of a `for loop`.
 + `.concat()` is used to merge two or more arrays and return a new array. 
-+ `.filter()` creates a new array with all elements from the current array that pass a test carried out by a callback function.
++ `.filter()` creates a new array with all elements from the current array that pass a test we provide.
 + `.findIndex()` returns the index of the first element in our array that satisfies a test we provide.
-+ `.splice()` allows use to both remove items from our array.
++ `.splice()` allows use to remove items from our array.
 + `.map()` iterates through an array and calls a provided function on every element in that array and returns a new array of the results. 
 
 And the most fun thing is there are even more for you to use and learn! But for now, let's take a moment to just celebrate.
