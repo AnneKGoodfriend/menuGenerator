@@ -674,7 +674,7 @@ In the editor you should see the code you have written so far:
             {food:'potato', type:'starch', flavor:'savory'}  
         ]
 
-        var sortedType = 'starch'; // representing the type we wish to remove
+        var sortedType = 'meat'; // representing the type we wish to remove
         var sortedFlavor = 'sweet'; // representing the flavor we wish to cut back on
 
 
@@ -709,7 +709,7 @@ In the editor you should see the code you have written so far:
             {food:'potato', type:'starch', flavor:'savory'}  
         ]
 
-        var sortedType = 'starch'; // representing the type we wish to remove
+        var sortedType = 'meat'; // representing the type we wish to remove
         var sortedFlavor = 'sweet'; // representing the flavor we wish to cut back on
 
 
