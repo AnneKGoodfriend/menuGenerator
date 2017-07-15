@@ -57,9 +57,9 @@ This code will iterate through our array of strings and print out each word in t
 
 Now it's your turn to give it a shot!
 
-Let's do a quick exercise to make sure we remember how to use a for loop to iterate through an array.
+Let's do a quick exercise to make sure we remember how to use a `for loop` to iterate through an array.
 
-##### Iterating through Arrays Refresher Exercise
+#### Iterating through Arrays Refresher Exercise
 
 1. Create an array called `fridgeContents` and fill it with at least 4 things that are currently in your fridge right now.
 2. Write a `for loop` to iterate through the array and print the results in the console.
@@ -74,7 +74,7 @@ Let's do a quick exercise to make sure we remember how to use a for loop to iter
 
 While using a `for loop` is acceptable, as of ES5 we can do the same thing in a much cleaner and more legible way using built-in methods.
 
-Click next to learn more about built-in method for arrays.
+Click Next to learn more about built-in method for arrays.
 
 ---
 
@@ -120,7 +120,7 @@ For now, we are only going to focus on providing the currentValue to our callbac
 
 Ok, now you give it a try!
 
-##### `.forEach()` Exercise
+#### `.forEach()` Exercise
 
 In the code editor you should see the `for loop` you just wrote:
 
@@ -145,14 +145,14 @@ In the next section, we will begin our final project for this course, making a r
 
 Sounds fun doesn't it?
 
-When you’re ready, click next to continue.
+When you’re ready, click Next to continue.
 
 ---
 
 ## Recipe Generator
 It's time to build a Recipe Generator!
 
-You are having a party and are coming up with a recipe based on ingredients your guests bring for the occasion. The following array contains objects that represent the ingredients your guests said they are planning to bring over. Each object also contains some key information about that ingredient including type and flavor.
+You are having a party and are coming up with a recipe based on ingredients your guests bring for the occasion. The following array contains objects that represent the ingredients your guests said they are planning to bring over. Each object also contains some key information about that ingredient, including type and flavor.
 
     // Array of guestFoods
     var guestFoods = [
@@ -162,13 +162,11 @@ You are having a party and are coming up with a recipe based on ingredients your
         {food:'rice', type:'grain', flavor:'savory'},
     ]
 
-You also have a bunch of ingredients in your fridge that you plan to use.
+You also have a bunch of ingredients in your fridge that you plan to use. Before we get too far into making a recipe, let's make sure we are including these items in our planning.
 
-Before we get too far into making a recipe, let's make sure we are including these items in our planning.
+#### Array of Objects Refresher
 
-##### Array of Objects Refresher
-
-1. The array above is already in your workspace. Let’s create a similar one right below it. Title your new array `myFoods` and include in it 5 objects representing some of your favorite foods to have on hand.  Make sure to include the same properties as the objects in our existing array, including `food`, `type`, and `flavor`.
+1. The array above is already in your workspace. Let’s create a similar one right below it. Title your new array `myFoods` and include in it 4 objects representing some of your favorite foods to have on hand.  Make sure to include the same properties as the objects in our existing array, including `food`, `type`, and `flavor`.
 
         // your array might look like this
         var myFoods = [  
@@ -180,7 +178,7 @@ Before we get too far into making a recipe, let's make sure we are including the
 
 Awesome job.
 
-Click next to continue.
+Click Next to continue.
 
 ---
 
@@ -196,7 +194,7 @@ The [`.concat()` method](https://developer.mozilla.org/en-US/docs/Web/JavaScript
 
 Let's give it a shot.
 
-##### `.concat()` Exercise
+#### `.concat()` Exercise
 
 You now have two arrays in your code window. One called `guestFoods` and one called `myFoods`.
 
@@ -253,7 +251,7 @@ You now have two arrays in your code window. One called `guestFoods` and one cal
     
 Amazing! Now that we have all of our food organized in one place we can start generating our recipe and choosing specific ingredients.
 
-Click next to continue.
+Click Next to continue.
 
 ---
 
@@ -261,7 +259,7 @@ Click next to continue.
 
 There is a guest coming to the party who is vegetarian and you want to sort out only the food that they can eat, i.e. the food that is not meat.
 
-Let's use a built-in method to iterate through our array and filter out the results that aren't the type 'meat'.
+Let's use a built-in method to iterate through our array and filter out the results that aren't the type 'meat' into a new array.
 
 But first, let's take a moment the remember how we would do this using a standard `for loop`.
 It would look something like this:
@@ -288,7 +286,7 @@ The `.filter()` method should do the trick! This method creates a new array with
 
 Let's give it a try!
 
-##### `.filter()` Exercise
+#### `.filter()` Exercise
 
 In your editor, you should see the `allFoods` array that we made in the last exercise.
 
@@ -352,7 +350,7 @@ The array `ingredients` should contain only the food items that don't have the p
 
 Now we have a list of all of our foods that we can use in our meat free recipe. Let's keep building this recipe!
 
-Click next to get cooking!
+Click Next to get cooking!
 
 ---
 
@@ -379,7 +377,7 @@ Here's how we can use `.findIndex()`:
 
 In the above example, the array `dinner` represents a meal. We've decided that we want to remove `pasta` from the list. In order to find the index of `pasta` we use `.findIndex()` to test which elements in the array are equal to the string 'pasta'.
 
-Now that we can use the `.splice()` method to remove the element based on the index we just found. 
+Now we can use the `.splice()` method to remove the element based on the index we just found. 
 
 `.splice()` allows use to both remove and add items to our array. For now, we are only using it to remove items so we need to provide two parameters in order to use this method, `start` and `deleteCount`. 
 
@@ -403,7 +401,7 @@ Our full code would look like this:
 
 That seems pretty useful. Let's see how this might help us with our recipe planning!
 
-##### `.findIndex()` and `.splice()` Exercise
+#### `.findIndex()` and `.splice()` Exercise
 
 We have decided we want to remove a 'sweet' item from `ingredients`. So let’s start by using `.findIndex()` to locate the first sweet food in our array.
 
@@ -450,7 +448,7 @@ The following code is already in you editor:
           return food.type != sortedType; // 
         }); 
 
-2. Start a new line below your current code and use `.findIndex()` to locate the first instance when an object's `flavor` is equal to our `sortedFlavor`;
+2. Start a new line below your current code and create a variable called `flavorIndex`.  Use `.findIndex()` to locate the first instance when an object's `flavor` is equal to our `sortedFlavor' and assign it to this variable.
 
 
         // your code should now look like this
@@ -504,7 +502,7 @@ The following code is already in you editor:
         });
         console.log(flavorIndex);
 
-4. On a new line use `.splice()` to remove the first instance of the `sortedFlavor` from `ingredients`.
+4. On a new line use `.splice()` to remove the `flavorIndex` from `ingredients`.
 
         // your code should now look like this
         allFoods = [  
@@ -657,7 +655,7 @@ The .map() method should come in pretty handy for assigning quantities to our in
 
 Let's go for it!
 
-##### `.map()` Exercise
+#### `.map()` Exercise
 
 In the editor you should see the code you have written so far:
 

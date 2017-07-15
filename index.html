@@ -6,130 +6,63 @@
 <div id="recipebox"></div>
 
 <script>
-// //provided array
-// var guestFoods = [  
-//     {food:'chicken', type:'meat', flavor:'savory', color:'white'},  
-//     {food:'apple', type:'fruit', flavor:'sweet', color:'red'},  
-//     {food:'broccoli', type:'vegetable', flavor:'savory', color:'green'},  
-//     {food:'rice', type:'starch', flavor:'savory', color:'white'},  
-// ]
 
-// //user array (they make this)
-// var myFoods = [  
-//     {food:'beef', type:'meat', flavor:'savory', color:'brown'},  
-//     {food:'pear', type:'fruit', flavor:'sweet', color:'green'},  
-//     {food:'kale', type:'vegetable', flavor:'savory', color:'green'},  
-//     {food:'potato', type:'starch', flavor:'savory', color:'white'},  
-// ]
+//provided array
+var guestFoods = [  
+    {food:'chicken', type:'meat', flavor:'savory'},  
+    {food:'apple', type:'fruit', flavor:'sweet'},  
+    {food:'broccoli', type:'vegetable', flavor:'savory'},  
+    {food:'rice', type:'starch', flavor:'savory'},  
+]
 
-// //use `.concat()` to combine your array with provides array, creating a new array called `allFoods` 
-// var allFoods = guestFoods.concat(myFoods);  
-// console.log(allFoods);
+//user array (they make this)
+var myFoods = [  
+    {food:'beef', type:'meat', flavor:'savory'},  
+    {food:'pear', type:'fruit', flavor:'sweet'},  
+    {food:'kale', type:'vegetable', flavor:'savory'},  
+    {food:'potato', type:'starch', flavor:'savory'},  
+]
 
+//using .concat() to combine your array with the provided array, creating a new array
+var allFoods = guestFoods.concat(myFoods);  
+console.log(allFoods);
 
-// // allFoods = [  
-// //     {food:'chicken', type:'meat', flavor:'savory', color:'white'},  
-// //     {food:'apple', type:'fruit', flavor:'sweet', color:'red'},  
-// //     {food:'broccoli', type:'vegetable', flavor:'savory', color:'green'},  
-// //     {food:'rice', type:'starch', flavor:'savory', color:'white'},  
-// // 	{food:'beef', type:'meat', flavor:'savory', color:'brown'},  
-// //     {food:'pear', type:'fruit', flavor:'sweet', color:'green'},  
-// //     {food:'kale', type:'vegetable', flavor:'savory', color:'green'},  
-// //     {food:'potato', type:'starch', flavor:'savory', color:'white'},  
-// // ]
+var sortedType = 'meat'; // representing the type we wish to remove
+var sortedFlavor = 'sweet'; // representing the flavor we wish to cut back on
 
+// using .filter() to create a new array of all foods that do not equal the sortedType
+var ingredients = allFoods.filter(function(food){    
+  return food.type != sortedType; // 
+});  
 
-// var sortedType = 'meat';
-// var sortedFlavor = 'sweet';
+// using .findIndex() to locate the first instance of the sortedFlavor in ingredients
+flavorIndex = ingredients.findIndex(function(food) {
+  return food.flavor == sortedFlavor;
+});
 
-// // use `.filter()` to create a new array of all foods that do not equal the 'sortedType'. Call it 'ingredients'.
-// var ingredients = allFoods.filter(function(food){    
-//   return food.type != sortedType; // 
-// });  
-// console.log(ingredients);
+// using .splice() to remove the first instance of the sortedFlavor from ingredients
+ingredients.splice(flavorIndex, 1); 
 
-// // use '`.findIndex()` to locate the first instance of the `sortedFlavor` in `ingredients`.
-// flavorIndex = ingredients.findIndex(function(food) {
-//   return food.flavor == sortedFlavor;
-// });
-// console.log(flavorIndex);
+// using .splice() to remove another random ingredient
+var sortedItem = Math.floor((Math.random() * ingredients.length  - 1));
+ingredients.splice(sortedItem, 1);
 
-// // use '`.splice()` to remove the first instance of the `sortedFlavor` from `ingredients`.
-// ingredients.splice(flavorIndex, 1); 
-// console.log(ingredients); // console log ingredients, now missing the first index of the flavor 'sweet'
+// using .map() to add qauntites
+var recipe = ingredients.map(function(food) {
+   return Math.ceil((Math.random() * 2)) + " " + food.food ;
+});
 
-// // remove 1 of a random element from 'ingredients' using .splice()
-// var flavor = Math.floor((Math.random() * ingredients.length  - 1)); //use the current length of ingredients to create a random value that does not exceed to total number of sortedFoods
-// ingredients.splice(flavor, 1); //use splice to remove the random element from the "ingredients" array
-// console.log(ingredients);
+console.log(recipe); // console logging the final recipe
 
-// // add quanitites using `.map()` in order to make a recipe
-// var recipe = ingredients.map(function(food) {
-//    return Math.ceil((Math.random() * 2)) + " " + food.food ;
-// });
-// console.log(recipe);
+//print out recipe in div
+document.getElementById("recipebox").innerHTML = recipe;
 
-// //use to `.join()` to combine your recipe into a sting
-// var finalRecipe = recipe.join(', '); 
-// console.log(finalRecipe);
+//`.join()` to combine the recipe into a sting
+var finalRecipe = recipe.join(', '); 
+console.log(finalRecipe);
 
-// //print out recipe in div
-// document.getElementById("recipebox").innerHTML = finalRecipe;
-
-	//provided array
-	var guestFoods = [  
-	    {food:'chicken', type:'meat', flavor:'savory', color:'white'},  
-	    {food:'apple', type:'fruit', flavor:'sweet', color:'red'},  
-	    {food:'broccoli', type:'vegetable', flavor:'savory', color:'green'},  
-	    {food:'rice', type:'starch', flavor:'savory', color:'white'},  
-	]
-
-	//user array (they make this)
-	var myFoods = [  
-	    {food:'beef', type:'meat', flavor:'savory', color:'brown'},  
-	    {food:'pear', type:'fruit', flavor:'sweet', color:'green'},  
-	    {food:'kale', type:'vegetable', flavor:'savory', color:'green'},  
-	    {food:'potato', type:'starch', flavor:'savory', color:'white'},  
-	]
-
-	//using .concat() to combine your array with the provided array, creating a new array
-	var allFoods = guestFoods.concat(myFoods);  
-	console.log(allFoods);
-	
-	var sortedType = 'meat'; // representing the type we wish to remove
-	var sortedFlavor = 'sweet'; // representing the flavor we wish to cut back on
-
-	// using filter() to create a new array of all foods that do not equal the sortedType
-	var ingredients = allFoods.filter(function(food){    
-	  return food.type != sortedType; // 
-	});  
-	
-	// using .findIndex() to locate the first instance of the sortedFlavor in ingredients
-	flavorIndex = ingredients.findIndex(function(food) {
-	  return food.flavor == sortedFlavor;
-	});
-
-	// using .splice() to remove the first instance of the sortedFlavor from ingredients
-	ingredients.splice(flavorIndex, 1); 
-	var sortedItem = Math.floor((Math.random() * ingredients.length  - 1));
-	ingredients.splice(sortedItem, 1);
-
-	// using .splice() to remove another random ingredient
-	var recipe = ingredients.map(function(food) {
-	   return Math.ceil((Math.random() * 2)) + " " + food.food ;
-	});
-
-	console.log(recipe);
-
-	//print out recipe in div
-	document.getElementById("recipebox").innerHTML = recipe;
-
-	//`.join()` to combine the recipe into a sting
-	var finalRecipe = recipe.join(', '); 
-	console.log(finalRecipe);
-
-	//print out recipe in div
-	document.getElementById("recipebox").innerHTML = finalRecipe;
+//print out recipe in div
+document.getElementById("recipebox").innerHTML = finalRecipe;
 
 </script>
 
