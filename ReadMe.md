@@ -802,7 +802,7 @@ The final code should be in your editor and it should look something like this:
 
 At the moment our recipe generator is designing a dish that doesn't include meat and isn't too sweet.  However, if we change the `sortedType` and `sortedFlavor` variables we can change the type of dish that we are creating.
 
-Go ahead and give it a try. Change `sortedType` to 'fruit' and `sortedFlavor` to `savory`. Apply your changes and see what happens!
+Go ahead and give it a try. Change `sortedType` to 'fruit' and `sortedFlavor` to 'savory'. Apply your changes and see what happens!
 
 Your recipe changed pretty dramatically, didn't it?  You could keep doing this process, coming up with a new recipe each time. Your party is gonna be full of some amazing original recipes and dishes. Great job!
 
