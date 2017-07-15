@@ -749,7 +749,7 @@ Click next to make some new recipes and wrap things up!
 
 Now we have a Recipe Generator! Well done!
 
-Our Recipe Generator is pretty nifty. It can combine lists of foods, filter out particular types of ingredients, and modify the flavors of the resulting recipe.
+Our Recipe Generator is pretty nifty. It can combine lists of foods, filter out particular types of ingredients, and modifies the flavors of the resulting recipe.
 
 The final code should be in your editor and it should look something like this:
 
