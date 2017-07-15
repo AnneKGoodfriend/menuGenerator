@@ -9,10 +9,15 @@
 4. Recipe Generator
 
 	a. Array of Objects
-	b. Recipe Generator: Combining Arrays
-	c. Recipe Generator: Filtering Ingredients
-	d. Recipe Generator: Tweaking Flavor
-	e. Recipe Generator: Adding Quantities
-	f. Recipe Generator: Wrapping It Up
+
+	b. Combining Arrays
+
+	c. Filtering Ingredients
+
+	d. Tweaking Flavor
+
+	e. Adding Quantities
+	
+	f. Wrapping It Up
 
 5. Review
