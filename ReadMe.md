@@ -741,7 +741,7 @@ In the editor you should see the code you have written so far:
 
 We can see that `recipes` contains a list of our ingredients, each with a quantity defined. This looks like one tasty recipe, folks!
 
-Click next to format the recipe and wrap things up!
+Click next to make some new recipes and wrap things up!
 
 ---
 
