@@ -442,7 +442,7 @@ The following code is already in you editor:
             {food:'potato', type:'starch', flavor:'savory'}  
         ]
 
-        var sortedType = 'starch'; // representing the type we wish to remove
+        var sortedType = 'meat'; // representing the type we wish to remove
         var sortedFlavor = 'sweet';
 
         // using filter() to create a new array of all foods that do not equal the sortedType
@@ -465,7 +465,7 @@ The following code is already in you editor:
             {food:'potato', type:'starch', flavor:'savory'}  
         ]
 
-        var sortedType = 'starch'; // representing the type we wish to remove
+        var sortedType = 'meat'; // representing the type we wish to remove
         var sortedFlavor = 'sweet';
 
         // using filter() to create a new array of all foods that do not equal the sortedType
@@ -491,7 +491,7 @@ The following code is already in you editor:
             {food:'potato', type:'starch', flavor:'savory'}  
         ]
 
-        var sortedType = 'starch'; // representing the type we wish to remove
+        var sortedType = 'meat'; // representing the type we wish to remove
         var sortedFlavor = 'sweet';
 
         // using filter() to create a new array of all foods that do not equal the sortedType
@@ -518,7 +518,7 @@ The following code is already in you editor:
             {food:'potato', type:'starch', flavor:'savory'}  
         ]
 
-        var sortedType = 'starch'; // representing the type we wish to remove
+        var sortedType = 'meat'; // representing the type we wish to remove
         var sortedFlavor = 'sweet';
 
         // using filter() to create a new array of all foods that do not equal the sortedType
@@ -551,7 +551,7 @@ But honestly, it still feels like our recipe has a few too many ingredients. Goo
             {food:'potato', type:'starch', flavor:'savory'}  
         ]
 
-        var sortedType = 'starch'; // representing the type we wish to remove
+        var sortedType = 'meat'; // representing the type we wish to remove
         var sortedFlavor = 'sweet';
 
         // using filter() to create a new array of all foods that do not equal the sortedType
@@ -582,7 +582,7 @@ But honestly, it still feels like our recipe has a few too many ingredients. Goo
             {food:'potato', type:'starch', flavor:'savory'}  
         ]
 
-        var sortedType = 'starch'; // representing the type we wish to remove
+        var sortedType = 'meat'; // representing the type we wish to remove
         var sortedFlavor = 'sweet';
 
         // using filter() to create a new array of all foods that do not equal the sortedType
